@@ -17,8 +17,29 @@ export class TableComponent implements OnInit {
   }
 
   getData(){
-    this.service.getdata().subscribe(data=>{
-      this.dataSource=data;
-    })
+    this.dataSource=users;
   }
 }
+const users=[
+  {
+    name:'ali',
+    email:"ali@gmail.com",
+    phone:123654847,
+    address:"cairo",
+    gender:"Male"
+  },
+  {
+    name:'ali',
+    email:"ali@gmail.com",
+    phone:123654847,
+    address:"cairo",
+    gender:"Male"
+  },
+  {
+    name:'ali',
+    email:"ali@gmail.com",
+    phone:123654847,
+    address:"cairo",
+    gender:"Male"
+  }
+]

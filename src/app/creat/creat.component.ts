@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { users } from '../table/table.component';
+
 
 @Component({
   selector: 'app-creat',
@@ -20,9 +22,10 @@ export class CreatComponent implements OnInit {
     gender: new FormControl('', [Validators.required])
   })
 
-
-  onSubmit() {
-    console.log(this.contactForm.value);
-  }
+  onSubmit(newData:object) {
+  newData= this.contactForm.value;
+    console.log(newData);
+    console.log(users)
+    }
 
 }

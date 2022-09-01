@@ -20,7 +20,7 @@ export class TableComponent implements OnInit {
     this.dataSource=users;
   }
 }
-const users=[
+export const users=[
   {
     name:'ali',
     email:"ali@gmail.com",
